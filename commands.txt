@@ -6,6 +6,8 @@ git remote -v
 git remote update -p
 git push origin main/master:master; git pull
 
+use checkout to initialize branches
+
 New repo needs an initial commit after using git init
 
 After cloning repo, to set up upstream with different name than local
