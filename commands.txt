@@ -1,0 +1,20 @@
+Hello world or something like that
+Commonly used git commands
+
+git branch -av
+git remote -v
+git remote update -p
+git push origin main/master:master; git pull
+
+New repo needs an initial commit after using git init
+
+After cloning repo, to set up upstream with different name than local
+git push -u origin master:main
+
+When it already exists:
+git branch --set-upstream-to=origin/main master
+
+To set default to pushing to upstream for above:
+git config --global push.default upstream
+
+TODO: Add notes for log, rebase, etc.
