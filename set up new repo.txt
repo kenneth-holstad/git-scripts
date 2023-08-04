@@ -1,0 +1,8 @@
+to do from existing project:
+
+create repo on website, then locally:
+
+git init
+add any file and make a commit
+git remote add origin __________.git
+git push --set-upstream origin master
