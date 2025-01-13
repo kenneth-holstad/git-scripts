@@ -2,7 +2,10 @@ to do from existing project:
 
 create repo on website, then locally:
 
+if you started without a readme:
 git init
 add any file and make a commit
 git remote add origin __________.git
 git push --set-upstream origin master
+
+if you started with a readme on website, you have to pull first instead. otherwise you get a merge issue
