@@ -10,4 +10,6 @@ you have to pull first. otherwise you get a merge issue
 i.e. git pull origin master
 
 add any file and make a commit
+git add *
+git commit -a -m "First commit"
 git push --set-upstream origin master
