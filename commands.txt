@@ -1,6 +1,14 @@
 Hello world or something like that
 Commonly used git commands
 
+---------------------------
+I'll keep below for now (TODO:) - but note a couple things:
+Default for repos changed from "master" to "main"
+I should change my conventions to not use "main" as default for upstream since that's confusing
+Use upstream instead from now on
+And note you'll have to always check if remotes are main or master
+---------------------------
+
 git branch -av
 git remote -v
 git remote update -p
