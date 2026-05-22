@@ -11,10 +11,10 @@ And note you'll have to always check if remotes are main or master
 
 git branch -av
 git remote -v
-git remote update -p
+git remote update -p # note: all -p does is prune old branches which usually isn't necessary if I'm working by myself
 git push origin main/master:master; git pull
 
-use checkout to initialize branches
+use checkout (or push -u) to initialize branches
 
 New repo needs an initial commit after using git init
 
