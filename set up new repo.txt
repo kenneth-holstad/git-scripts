@@ -1,15 +1,40 @@
-to do from existing project:
-
-create repo on website, then locally:
+# if you want to create on website first, do that then in local folder run:
 
 git init
 git remote add origin __________.git
-
-if you started with a readme on website on an empty repo, 
-you have to pull first. otherwise you get a merge issue
-i.e. git pull origin master
-
-add any file and make a commit
-git add *
+git add .
 git commit -a -m "First commit"
-git push --set-upstream origin master
+git push -u origin master
+
+# if you don't want to create from the website you'd make the repo then:
+gh repo create
+
+or for non-interactive version, something like:
+gh repo create my-repo-name --public --push --source=.
+
+----------------------------
+if you want longwinded notes here they are
+----------------------------
+
+git init
+
+# a lot of new repos by default use main instead of master
+# if you want to use master rename it on the website in settings > branches
+# rename it locally with this: (notes below will assume you did this for both)
+# git branch -m master
+# also you can check default branch setting by using   git config --global init.defaultBranch
+# or change it with git config --global init.defaultBranch master
+
+git remote add origin __________.git
+
+# if you already created a readme, to avoid merge conflict run:
+# git pull origin master
+
+# add any file if you hadn't already and make a commit
+git add .     # git add * apparently won't hit files like .gitignore
+git commit -a -m "First commit"     # the -a isn't really necessary
+
+# these will create a new master branch on the new repo on the website
+git push -u origin master
+# i used to use the below but the above is identical
+# git push --set-upstream origin master
